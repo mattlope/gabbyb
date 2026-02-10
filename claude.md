@@ -1,100 +1,86 @@
-# Gabby B — Official Website
+# CLAUDE.md — Gabby B Website
 
-## Project Overview
+## Start of Session Checklist
 
-Official website for **Gabby B**, a Brazilian pop recording artist based in Miami, FL. The site promotes her music, brand, merchandise, and booking inquiries.
+1. Read `features.md` — the working feature roadmap with checkboxes
+2. Read `changes.md` — the changelog to know what's already been done
+3. Check `git status` and `git log --oneline -5` to see current state
+4. Ask the user what they want to work on, or suggest items from `features.md`
 
-## Project Goals
+## Project Summary
 
-- Serve as the primary web presence for Gabby B's brand
-- Promote the **XOXO EP** and all music releases
-- Showcase official music videos and streaming links
-- Drive merchandise sales via Shopify integration
-- Provide booking and press inquiry channels
-- Maintain a cohesive visual identity (pink/gold theme)
-- Ensure mobile-first responsive design
+Official website for **Gabby B** — Brazilian pop artist based in Miami, FL with 5M+ followers. The site promotes her music (XOXO EP), merch (Shopify), music videos (YouTube), and booking inquiries.
 
-## Tech Stack
+**Current version: v2.1**
 
-- **Static HTML/CSS/JS** — no build tools or frameworks
-- **Google Fonts** — Playfair Display, Outfit, Dancing Script
-- **Spotify Embeds** — album and track players
-- **Shopify** — external merch store (daniel-muybuenollc.myshopify.com)
-- **Cloudflare** — hosting/CDN with email protection
+## Tech Stack & Constraints
 
-## Site Structure
+- **Static HTML/CSS/JS only** — no build tools, no frameworks, no bundlers
+- Google Fonts (Playfair Display, Outfit, Dancing Script)
+- Spotify embed iframes for streaming
+- External Shopify merch store (daniel-muybuenollc.myshopify.com)
+- Hosted on Cloudflare (email protection active)
+- All paths are relative — no absolute URLs for local assets
+
+## File Structure
 
 ```
-gabbyb/
-├── index.html          # Main landing page (all sections)
-├── css/
-│   └── styles.css      # All styles extracted from inline
-├── js/
-│   └── main.js         # Navigation, sparkles, scroll reveal
-├── images/
-│   ├── logo.webp       # Gabby B logo (nav + footer)
-│   ├── hero-bg.webp    # Hero section background
-│   ├── xoxo-ep.jpg     # XOXO EP artwork
-│   └── about.webp      # About section photo
-├── pages/
-│   ├── music.html      # Music page — EP details + streaming
-│   ├── about.html      # About page — bio + social links
-│   ├── videos.html     # Videos page — music videos + streaming
-│   ├── merch.html      # Merch page — full product catalog
-│   └── booking.html    # Booking page — inquiry form + types
-├── claude.md           # This file — project goals & structure
-├── changes.md          # Version history and changelog
-└── README.md           # Repository description
+index.html              Main landing page (all sections combined)
+css/styles.css          All styles — design system, components, responsive
+js/main.js              Nav scroll, hamburger, sparkles, scroll reveal
+images/                 logo.webp, hero-bg.webp, xoxo-ep.jpg, about.webp
+pages/                  music.html, about.html, videos.html, merch.html, booking.html
+claude.md               This file — session instructions
+features.md             Feature roadmap with checkboxes
+changes.md              Version changelog
 ```
 
-## Navigation Pages
+## Key Files to Know
 
-| Nav Item | Target | Type |
-|----------|--------|------|
-| Music | `#music` / `pages/music.html` | Section / Page |
-| About | `#about` / `pages/about.html` | Section / Page |
-| Videos | `#videos` / `pages/videos.html` | Section / Page |
-| Merch | `#merch` / `pages/merch.html` | Section / Page |
-| Booking | `#booking` / `pages/booking.html` | Section / Page |
-| Press | gabbybmusic.com/press/ | External |
-
-## External Integrations
-
-- **Spotify**: Artist profile + album/track embeds
-- **YouTube**: @GabbyBMusic channel
-- **TikTok**: @gabbybmusic
-- **Instagram**: @gabbybmusic
-- **Apple Music**: Artist profile
-- **Shopify**: Merch store
-- **Socials Hub**: socials.gabbybmusic.com
+| File | What it does | When to edit |
+|------|-------------|--------------|
+| `css/styles.css` | All styles, design tokens, responsive breakpoints | Any visual change |
+| `js/main.js` | Nav, mobile menu, sparkles, scroll reveal, smooth scroll | Any behavior change |
+| `index.html` | Full landing page with all sections | Content or layout changes |
+| `pages/*.html` | Dedicated pages — each has its own nav, header, content, footer | Page-specific changes |
 
 ## Design System
 
-- Primary: `#FF1493` (Hot Pink)
-- Secondary: `#C71585` (Deep Pink)
-- Accent: `#FFD700` (Gold)
+- Primary: `#FF1493` (Hot Pink) — buttons, accents, highlights
+- Secondary: `#C71585` (Deep Pink) — hover states, gradients
+- Gold: `#FFD700` — accent badges, special highlights
 - Background: `#FFF5F8` (Pink Cream)
-- Dark: `#1a1a1a`
-- Heading font: Playfair Display (serif)
-- Body font: Outfit (sans-serif)
+- Dark: `#1a1a1a` — EP section, booking section, footer
+- Headings: Playfair Display (serif, italic, 900 weight)
+- Body: Outfit (sans-serif)
 - Decorative: Dancing Script (cursive)
 
-## Key Music Videos
+## Conventions
 
-- Si No Sabias
-- Belly Dancer (1M+ views)
-- Pretty Girl Lit ft. Justina Valentine
-- Earthquake ft. Mikaila Murphy
-- Fine ft. Devvon Terrell
-- One Too Many
-- Leche ft. Vikina
-- Bundinha (2025)
-- Wedding Guest (2025)
+- **Subpages** link CSS/JS with `../css/styles.css` and `../js/main.js`
+- **Subpage nav** starts with class `scrolled` (solid background, no transparency)
+- **Active nav link** gets class `active` on the current page
+- **Reveal animations** use class `reveal` — JS adds `visible` on scroll via IntersectionObserver
+- **Emoji usage** — only in content where the original site had them, not in code/comments
+- All images use `loading="lazy"` where appropriate
+- Merch images load from `gabbybmusic.com/wp-content/uploads/`
 
-## Current Version
+## Workflow
 
-**v2.1** — See changes.md for details.
+1. Always work on a `claude/` prefixed branch
+2. After implementing a feature, check the box in `features.md`
+3. Log the change in `changes.md` under the current version
+4. Commit with a clear message describing what changed and why
+5. Push to the feature branch when work is complete
 
-## Working Feature List
+## External Links Reference
 
-See **features.md** for the full roadmap, backlog, and checklist of upcoming work.
+- Spotify artist: `https://open.spotify.com/artist/6Yb4hxEBpRMWgh7YzHbKbn`
+- YouTube: `https://www.youtube.com/@GabbyBMusic`
+- TikTok: `https://www.tiktok.com/@gabbybmusic`
+- Instagram: `https://www.instagram.com/gabbybmusic/`
+- Apple Music: `https://music.apple.com/us/artist/gabby-b/1456176973`
+- Socials hub: `https://socials.gabbybmusic.com/`
+- Shopify store: `https://daniel-muybuenollc.myshopify.com/`
+- Booking: `https://gabbybmusic.com/booking/`
+- Press: `https://gabbybmusic.com/press/`
