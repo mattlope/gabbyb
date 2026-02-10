@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Booking — Gabby B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon-180.png">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="sparkle-container" id="sparkles"></div>
+
+<!-- Navigation -->
+<nav class="nav scrolled" id="nav">
+  <a href="../index.html"><img src="../images/logo.webp" alt="Gabby B" class="nav-logo"></a>
+  <ul class="nav-links">
+    <li><a href="music.html">Music</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="videos.html">Videos</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="booking.html" class="active">Booking</a></li>
+    <li><a href="https://gabbybmusic.com/press/" target="_blank">Press</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-overlay" id="overlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="music.html" onclick="closeMenu()">Music</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="videos.html" onclick="closeMenu()">Videos</a>
+  <a href="merch.html" onclick="closeMenu()">Merch</a>
+  <a href="booking.html" onclick="closeMenu()">Booking</a>
+  <a href="https://gabbybmusic.com/press/" target="_blank" onclick="closeMenu()">Press</a>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <h1>Book <span class="accent">Gabby B</span></h1>
+  <p>Festivals, private events, and brand partnerships</p>
+</div>
+
+<!-- Booking Section -->
+<section class="booking-section">
+  <div class="booking-inner reveal">
+    <p class="section-label">Let's Work</p>
+    <h2 class="section-title">Book <span class="accent">Gabby B</span></h2>
+
+    <div class="booking-types">
+      <div class="booking-type">
+        <span class="booking-type-icon">&#127914;</span>
+        <h3>Festivals & Concerts</h3>
+        <p>High-energy performances with full production. Available for festivals, concerts, and live events worldwide.</p>
+      </div>
+      <div class="booking-type">
+        <span class="booking-type-icon">&#127881;</span>
+        <h3>Private Events</h3>
+        <p>Exclusive performances for corporate events, private parties, and special occasions.</p>
+      </div>
+      <div class="booking-type">
+        <span class="booking-type-icon">&#129309;</span>
+        <h3>Brand Partnerships</h3>
+        <p>Collaborations, endorsements, and social media campaigns with 5M+ combined reach.</p>
+      </div>
+    </div>
+
+    <div class="booking-contact">
+      <a href="https://gabbybmusic.com/booking/" target="_blank" class="booking-btn">
+        Inquire Now
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <p>or email directly</p>
+      <a href="mailto:booking@gabbybmusic.com" class="booking-email">booking@gabbybmusic.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <img src="../images/logo.webp" alt="Gabby B" class="footer-logo">
+  <p>&copy; 2025 Gabby B. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="https://gabbybmusic.com/press/" target="_blank">Press</a>
+    <a href="https://gabbybmusic.com/booking/" target="_blank">Booking</a>
+    <a href="https://socials.gabbybmusic.com/" target="_blank">Links</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
