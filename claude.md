@@ -94,3 +94,7 @@ gabbyb/
 ## Current Version
 
 **v2.1** — See changes.md for details.
+
+## Working Feature List
+
+See **features.md** for the full roadmap, backlog, and checklist of upcoming work.
