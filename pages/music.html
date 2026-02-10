@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Music — Gabby B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="sparkle-container" id="sparkles"></div>
+
+<!-- Navigation -->
+<nav class="nav scrolled" id="nav">
+  <a href="../index.html"><img src="../images/logo.webp" alt="Gabby B" class="nav-logo"></a>
+  <ul class="nav-links">
+    <li><a href="music.html" class="active">Music</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="videos.html">Videos</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="https://gabbybmusic.com/press/" target="_blank">Press</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-overlay" id="overlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="music.html" onclick="closeMenu()">Music</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="videos.html" onclick="closeMenu()">Videos</a>
+  <a href="merch.html" onclick="closeMenu()">Merch</a>
+  <a href="booking.html" onclick="closeMenu()">Booking</a>
+  <a href="https://gabbybmusic.com/press/" target="_blank" onclick="closeMenu()">Press</a>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <h1>The <span class="accent">Music</span></h1>
+  <p>Stream, discover, and fall in love with the sound</p>
+</div>
+
+<!-- XOXO EP Section -->
+<section class="ep-section">
+  <div class="ep-inner">
+    <div class="ep-artwork reveal">
+      <img src="../images/xoxo-ep.jpg" alt="XOXO EP Artwork">
+    </div>
+    <div class="ep-info reveal" style="transition-delay: 0.15s">
+      <p class="section-label">New Release</p>
+      <h2>XOXO <span class="kiss">&#128139;</span></h2>
+      <p>The debut EP from Gabby B — a collection of tracks that blend pop, Latin vibes, and pure energy. From heartfelt ballads to dancefloor anthems, XOXO is a journey through love, confidence, and everything in between.</p>
+      <ul class="ep-tracklist">
+        <li><span class="track-num">01</span><span class="track-name">Leche</span><span class="track-feat">feat. Vikina</span></li>
+        <li><span class="track-num">02</span><span class="track-name">Pose</span></li>
+        <li><span class="track-num">03</span><span class="track-name">Dance All Night</span></li>
+        <li><span class="track-num">04</span><span class="track-name">Christmas Day</span></li>
+        <li><span class="track-num">05</span><span class="track-name">Si No Sabias</span></li>
+      </ul>
+      <div class="btn-row">
+        <a href="https://open.spotify.com/album/1m8FVOx2SOErpmAmq6NGZP" target="_blank" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          Stream Now
+        </a>
+        <a href="https://music.apple.com/us/artist/gabby-b/1456176973" target="_blank" class="btn btn-outline">Apple Music</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Streaming Embeds -->
+<section class="videos-section">
+  <div class="reveal">
+    <p class="section-label">Listen</p>
+    <h2 class="section-title">Stream <span class="accent">Now</span></h2>
+  </div>
+  <div class="spotify-grid">
+    <div class="spotify-card album reveal">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1m8FVOx2SOErpmAmq6NGZP?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="spotify-tracks">
+      <div class="spotify-card track reveal" style="transition-delay: 0.1s;">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2q6s1xHTlk5ZJb49wndkrf?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="spotify-card track reveal" style="transition-delay: 0.2s;">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0j2vYkBJVLxuMM1B7iWwAp?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <img src="../images/logo.webp" alt="Gabby B" class="footer-logo">
+  <p>&copy; 2025 Gabby B. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="https://gabbybmusic.com/press/" target="_blank">Press</a>
+    <a href="https://gabbybmusic.com/booking/" target="_blank">Booking</a>
+    <a href="https://socials.gabbybmusic.com/" target="_blank">Links</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
