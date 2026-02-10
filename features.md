@@ -32,7 +32,7 @@
 ## Medium Priority — UX & Polish
 
 - [ ] **Open Graph & Twitter Card meta tags** — Social sharing previews (image, title, description) for every page. Huge for virality when fans share links.
-- [ ] **Favicon** — Add a branded favicon (kiss mark or logo). Currently shows browser default.
+- [x] **Favicon** — Pink cursive "G" logo as SVG + ICO + PNG (16, 32, 180, 192, 512) + apple-touch-icon on all pages.
 - [ ] **Custom 404 page** — Branded "page not found" with navigation back to home. On-brand with the pink/gold theme.
 - [ ] **Back-to-top button** — Floating button that appears after scrolling down on the long index page.
 - [ ] **Page transition animations** — Smooth fade or slide between subpages to feel like a single-page app.
