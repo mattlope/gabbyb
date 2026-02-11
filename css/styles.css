@@ -323,7 +323,7 @@ body {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center 20%;
+  background-position: 30% 20%;
   filter: brightness(0.75) saturate(1.2);
   transform: scale(1.05);
   transition: transform 8s ease-out;
@@ -1417,6 +1417,8 @@ body {
   .ep-artwork { order: -1; }
   .ep-artwork img { max-width: 300px; margin: 0 auto; display: block; }
   .ep-info p { margin-left: auto; margin-right: auto; }
+  .ep-tracklist { display: flex; flex-direction: column; align-items: center; }
+  .ep-tracklist li { justify-content: center; }
   .btn-row { justify-content: center; }
 
   .about-inner {
@@ -1439,7 +1441,7 @@ body {
     padding-bottom: 32px;
   }
   .hero-bg {
-    background-position: center top;
+    background-position: 30% top;
     filter: brightness(0.7) saturate(1.3);
   }
   .hero-gradient {
@@ -1516,8 +1518,8 @@ body {
     padding: 8px 14px;
     font-size: 9px;
     letter-spacing: 0.12em;
-    top: 90px;
-    right: 16px;
+    top: 65px;
+    left: 16px;
   }
   .hero-cta {
     padding: 12px 24px;
