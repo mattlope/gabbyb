@@ -29,6 +29,9 @@ function ask(question) {
 async function main() {
   console.log('\n--- Gabby B Dashboard: Create Admin User ---\n');
 
+  // Initialize database (async for sql.js)
+  await db.init();
+
   const username = process.env.ADMIN_USER || await ask('Username: ');
   const displayName = process.env.ADMIN_NAME || await ask('Display name: ');
   const password = process.env.ADMIN_PASS || await ask('Password (min 8 chars): ');

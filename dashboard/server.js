@@ -6,8 +6,7 @@ const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const path = require('path');
 
-const authRoutes = require('./routes/auth');
-const apiRoutes = require('./routes/api');
+const db = require('./db/database');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -74,27 +73,10 @@ const submissionLimiter = rateLimit({
   legacyHeaders: false,
 });
 
-// ===== Routes =====
-
-// Apply rate limiters
+// ===== Rate Limiters =====
 app.use('/api/auth/login', loginLimiter);
 app.use('/api', apiLimiter);
 app.post('/api/submissions', submissionLimiter);
-
-// API routes
-app.use('/api/auth', authRoutes);
-app.use('/api', apiRoutes);
-
-// Static files for dashboard frontend
-app.use(express.static(path.join(__dirname, 'public')));
-
-// SPA fallback — serve index.html for non-API routes
-app.get('*', (req, res) => {
-  if (req.path.startsWith('/api/')) {
-    return res.status(404).json({ error: 'Not found' });
-  }
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
 
 // ===== Error Handler =====
 app.use((err, req, res, _next) => {
@@ -103,6 +85,30 @@ app.use((err, req, res, _next) => {
 });
 
 // ===== Start =====
-app.listen(PORT, () => {
-  console.log(`Dashboard server running on http://localhost:${PORT}`);
+// Initialize database (async for sql.js) then start server
+db.init().then(() => {
+  // Load routes after DB is ready
+  const authRoutes = require('./routes/auth');
+  const apiRoutes = require('./routes/api');
+
+  app.use('/api/auth', authRoutes);
+  app.use('/api', apiRoutes);
+
+  // Static files for dashboard frontend
+  app.use(express.static(path.join(__dirname, 'public')));
+
+  // SPA fallback
+  app.get('*', (req, res) => {
+    if (req.path.startsWith('/api/')) {
+      return res.status(404).json({ error: 'Not found' });
+    }
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  });
+
+  app.listen(PORT, () => {
+    console.log(`Dashboard server running on http://localhost:${PORT}`);
+  });
+}).catch((err) => {
+  console.error('Failed to initialize database:', err);
+  process.exit(1);
 });
