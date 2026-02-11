@@ -4,6 +4,16 @@
 
 ---
 
+## Completed (v2.2)
+
+- [x] Desktop hero circular video portal (450px glowing circle, flex layout, max-width 1000px)
+- [x] Mobile hero video background (faded full-screen at 40% opacity)
+- [x] Portal entrance animation (scale + blur) and pulsing glow keyframes
+- [x] Remove album art hover/bounce animations
+- [x] Pin NEW badge inside top-right corner of album art
+- [x] Fix Videos nav link not scrolling to section (id mismatch)
+- [x] Fix mobile hero content z-index stacking
+
 ## Completed (v2.1)
 
 - [x] Extract CSS into `css/styles.css`

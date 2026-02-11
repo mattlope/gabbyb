@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.2 — Hero Video & Polish (2026-02-11)
+
+### Desktop Hero — Circular Video Portal
+- Added `.hero-inner` flex wrapper with `max-width: 1000px` for a tight, centered layout
+- Hero video plays inside a **450px glowing circle** next to the left-aligned title
+- Portal entrance animation: scale + blur fade-in (0.6s delay)
+- Pulsing pink/purple glow cycles on border and shadow (`portal-glow` keyframes)
+- Tablet (≤900px): portal shrinks to 300px, gap tightens to 32px
+- Mobile (≤600px): `.hero-inner` becomes `static`, video reverts to full-background fade
+
+### Mobile Hero — Video Background
+- Hero video plays as a faded full-screen background (40% opacity) on mobile
+- Heavy gradient overlays for text readability
+- Mobile hero shortened to 60svh with bottom-aligned content
+
+### Album Art Cleanup
+- Removed hover rotate/scale effect on EP artwork image
+- Removed bouncing rotation animation on the "NEW" badge
+- Pinned NEW badge inside the top-right corner of the album art (was floating outside)
+- Constrained `.ep-artwork` container to `max-width: 420px` so badge aligns to image edge
+
+### Bug Fixes
+- Fixed Videos nav link (`#videos`) not matching section id (`music-videos`)
+- Fixed mobile hero content rendering behind gradient overlay (restored `z-index: 2` on `.hero-content`)
+
+---
+
 ## v2.1 — Site Structure Refactor (2026-02-10)
 
 ### Structural Changes
