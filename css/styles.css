@@ -403,6 +403,8 @@ body {
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   flex: 1;
   text-align: left;
   animation: hero-rise 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
