@@ -1,5 +1,39 @@
 # Changelog
 
+## v3.0-beta — Backend Dashboard & Booking Form (2026-02-11)
+
+### Backend Dashboard (dash.gabbybmusic.com)
+- Created full Node.js + Express backend application in `dashboard/`
+- SQLite database with `users` and `submissions` tables
+- Secure authentication: bcrypt password hashing (12 rounds), JWT tokens, rate-limited login (5 attempts per 15 min)
+- Security middleware: Helmet (CSP, HSTS, etc.), CORS whitelist, body size limits
+- Admin user creation via CLI script (`node scripts/create-admin.js`)
+- API endpoints for form submissions (CRUD), stats overview, auth
+- Dashboard frontend with login page and main dashboard UI
+- Overview section: stat cards (total, unread, this week, this month), recent submissions table
+- Submissions section: full table with search, status filter, read/unread filter, pagination
+- Submission detail modal with status management (New, Contacted, In Progress, Won, Lost)
+- Mobile-responsive sidebar and layout
+- Coming soon placeholders for Social Media and Ads sections
+- Created `DASHBOARD.md` feature roadmap with 6 planned phases
+
+### Booking Form
+- Replaced external booking link with on-site inquiry form on `pages/booking.html`
+- Form fields: name, email, inquiry type (dropdown), message
+- Client-side validation with user-friendly error messages
+- Submissions sent to dashboard API at `dash.gabbybmusic.com`
+- Success/error feedback with visual indicators
+- Added booking form styles to main stylesheet (glass-morphism inputs, custom select arrow, responsive 2-column layout)
+- Updated homepage "Inquire Now" button to link to on-site booking page instead of external URL
+- Created `js/booking-form.js` for form submission handling
+
+### Documentation
+- Updated `claude.md` with dashboard file structure, tech stack, and references
+- Updated `features.md` with completed items
+- Created `DASHBOARD.md` with full dashboard roadmap
+
+---
+
 ## v2.2 — Hero Video & Polish (2026-02-11)
 
 ### Desktop Hero — Circular Video Portal

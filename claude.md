@@ -3,18 +3,20 @@
 ## Start of Session Checklist
 
 1. Read `features.md` — the working feature roadmap with checkboxes
-2. Read `changes.md` — the changelog to know what's already been done
-3. Check `git status` and `git log --oneline -5` to see current state
-4. Ask the user what they want to work on, or suggest items from `features.md`
+2. Read `DASHBOARD.md` — the dashboard feature roadmap with phases
+3. Read `changes.md` — the changelog to know what's already been done
+4. Check `git status` and `git log --oneline -5` to see current state
+5. Ask the user what they want to work on, or suggest items from `features.md` or `DASHBOARD.md`
 
 ## Project Summary
 
 Official website for **Gabby B** — Brazilian pop artist based in Miami, FL with 5M+ followers. The site promotes her music (XOXO EP), merch (Shopify), music videos (YouTube), and booking inquiries.
 
-**Current version: v2.2**
+**Current version: v3.0-beta**
 
 ## Tech Stack & Constraints
 
+### Main Site
 - **Static HTML/CSS/JS only** — no build tools, no frameworks, no bundlers
 - Google Fonts (Playfair Display, Outfit, Dancing Script)
 - Spotify embed iframes for streaming
@@ -22,18 +24,36 @@ Official website for **Gabby B** — Brazilian pop artist based in Miami, FL wit
 - Hosted on Cloudflare (email protection active)
 - All paths are relative — no absolute URLs for local assets
 
+### Dashboard (dash.gabbybmusic.com)
+- **Node.js + Express** backend with SQLite database
+- JWT authentication with bcrypt password hashing
+- Rate limiting (login, API, form submissions)
+- Security headers via Helmet
+- See `DASHBOARD.md` for full feature roadmap
+
 ## File Structure
 
 ```
 index.html              Main landing page (all sections combined)
 css/styles.css          All styles — design system, components, responsive
 js/main.js              Nav scroll, hamburger, sparkles, scroll reveal
+js/booking-form.js      Booking form submission handler
 images/                 logo.webp, hero-bg.webp, xoxo-ep.jpg, about.webp
 videos/                 hero.mp4 (hero background/portal video)
 pages/                  music.html, about.html, videos.html, merch.html, booking.html
+dashboard/              Backend dashboard app (dash.gabbybmusic.com)
+  server.js             Express server entry point
+  db/database.js        SQLite database setup and schema
+  routes/auth.js        Login/auth API routes
+  routes/api.js         Submissions and stats API routes
+  middleware/auth.js     JWT auth middleware
+  scripts/create-admin.js   CLI tool to create admin users
+  public/               Dashboard frontend (login + dashboard UI)
+  .env.example          Environment variables template
 claude.md               This file — session instructions
 features.md             Feature roadmap with checkboxes
 changes.md              Version changelog
+DASHBOARD.md            Dashboard feature roadmap and phases
 ```
 
 ## Key Files to Know
@@ -42,8 +62,13 @@ changes.md              Version changelog
 |------|-------------|--------------|
 | `css/styles.css` | All styles, design tokens, responsive breakpoints | Any visual change |
 | `js/main.js` | Nav, mobile menu, sparkles, scroll reveal, smooth scroll | Any behavior change |
+| `js/booking-form.js` | Booking form → dashboard API submission | Form changes |
 | `index.html` | Full landing page with all sections | Content or layout changes |
 | `pages/*.html` | Dedicated pages — each has its own nav, header, content, footer | Page-specific changes |
+| `dashboard/server.js` | Dashboard Express server | Backend changes |
+| `dashboard/routes/api.js` | Submissions CRUD + stats endpoints | API changes |
+| `dashboard/public/` | Dashboard frontend (login, dashboard views) | Dashboard UI changes |
+| `DASHBOARD.md` | Dashboard feature roadmap with phases | Dashboard planning |
 
 ## Design System
 
@@ -88,5 +113,6 @@ changes.md              Version changelog
 - Apple Music: `https://music.apple.com/us/artist/gabby-b/1456176973`
 - Socials hub: `https://socials.gabbybmusic.com/`
 - Shopify store: `https://daniel-muybuenollc.myshopify.com/`
+- Dashboard: `https://dash.gabbybmusic.com/`
 - Booking: `https://gabbybmusic.com/booking/`
 - Press: `https://gabbybmusic.com/press/`

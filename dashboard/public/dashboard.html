@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Gabby B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-page">
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <h1 class="sidebar-logo">Gabby B</h1>
+    <span class="sidebar-badge">DASH</span>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="#" class="sidebar-link active" data-section="overview">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      Overview
+    </a>
+    <a href="#" class="sidebar-link" data-section="submissions">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Submissions
+      <span class="sidebar-badge-count" id="unreadBadge" hidden>0</span>
+    </a>
+    <a href="#" class="sidebar-link disabled" title="Coming soon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+      Streaming
+    </a>
+    <a href="#" class="sidebar-link disabled" title="Coming soon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+      Social Media
+    </a>
+    <a href="#" class="sidebar-link disabled" title="Coming soon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Demographics
+    </a>
+    <a href="#" class="sidebar-link disabled" title="Coming soon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      Revenue
+    </a>
+    <a href="#" class="sidebar-link disabled" title="Coming soon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Tour & Events
+    </a>
+    <a href="#" class="sidebar-link disabled" title="Coming soon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Release Planner
+    </a>
+    <a href="#" class="sidebar-link disabled" title="Coming soon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+      Ads & Spend
+    </a>
+    <a href="#" class="sidebar-link disabled" title="Coming soon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      Smart Links
+    </a>
+  </nav>
+  <div class="sidebar-footer">
+    <div class="sidebar-user">
+      <span class="sidebar-user-name" id="userName"></span>
+      <span class="sidebar-user-role" id="userRole"></span>
+    </div>
+    <button class="sidebar-logout" id="logoutBtn" title="Sign out">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    </button>
+  </div>
+</aside>
+
+<!-- Mobile header -->
+<header class="mobile-header" id="mobileHeader">
+  <button class="mobile-menu-toggle" id="sidebarToggle">
+    <span></span><span></span><span></span>
+  </button>
+  <h1 class="mobile-header-logo">Gabby B <span>DASH</span></h1>
+</header>
+
+<!-- Main Content -->
+<main class="main-content" id="mainContent">
+
+  <!-- Overview Section -->
+  <section class="dash-section" id="section-overview">
+    <div class="dash-section-header">
+      <h2>Overview</h2>
+      <p class="dash-date" id="currentDate"></p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="stats-grid" id="statsGrid">
+      <div class="stat-card">
+        <div class="stat-card-icon pink">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="stat-card-info">
+          <span class="stat-card-value" id="statTotal">--</span>
+          <span class="stat-card-label">Total Submissions</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-icon gold">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="stat-card-info">
+          <span class="stat-card-value" id="statUnread">--</span>
+          <span class="stat-card-label">Unread</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-icon purple">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div class="stat-card-info">
+          <span class="stat-card-value" id="statWeek">--</span>
+          <span class="stat-card-label">This Week</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-icon green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="stat-card-info">
+          <span class="stat-card-value" id="statMonth">--</span>
+          <span class="stat-card-label">This Month</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Submissions -->
+    <div class="dash-card">
+      <div class="dash-card-header">
+        <h3>Recent Submissions</h3>
+        <button class="btn-small" id="viewAllBtn">View All</button>
+      </div>
+      <div class="table-wrap">
+        <table class="dash-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Type</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="recentTableBody">
+            <tr><td colspan="5" class="table-empty">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Coming Soon Placeholders -->
+    <div class="coming-soon-grid">
+      <div class="coming-soon-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+        <h4>Streaming Analytics</h4>
+        <p>Spotify, Apple Music, YouTube Music & Deezer — cross-platform streams, listeners, and playlist adds</p>
+        <span class="coming-soon-tag">Coming in Phase 3</span>
+      </div>
+      <div class="coming-soon-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        <h4>Social Media Analytics</h4>
+        <p>Instagram, TikTok, YouTube growth charts and engagement metrics</p>
+        <span class="coming-soon-tag">Coming in Phase 4</span>
+      </div>
+      <div class="coming-soon-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h4>Fan Demographics</h4>
+        <p>Listener age, gender, and geographic heat maps powered by Apple Music & Deezer data</p>
+        <span class="coming-soon-tag">Coming in Phase 5</span>
+      </div>
+      <div class="coming-soon-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <h4>Revenue & Royalties</h4>
+        <p>Earnings breakdowns by platform, royalty tracking, and split management across distributors</p>
+        <span class="coming-soon-tag">Coming in Phase 5</span>
+      </div>
+      <div class="coming-soon-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h4>Tour & Events</h4>
+        <p>Upcoming shows, ticket sales tracking, and geographic demand mapping via Bandsintown</p>
+        <span class="coming-soon-tag">Coming in Phase 6</span>
+      </div>
+      <div class="coming-soon-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <h4>Release Planner</h4>
+        <p>Calendar for singles, albums, and EPs — pre-save campaigns, release strategy, and rollout timelines</p>
+        <span class="coming-soon-tag">Coming in Phase 6</span>
+      </div>
+      <div class="coming-soon-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+        <h4>Ad Performance</h4>
+        <p>Facebook/Meta Ads and Google Ads integration with ROI tracking</p>
+        <span class="coming-soon-tag">Coming in Phase 7</span>
+      </div>
+      <div class="coming-soon-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <h4>Smart Links & Campaigns</h4>
+        <p>Linkfire/Odesli integration, click-through analytics, and campaign performance tracking</p>
+        <span class="coming-soon-tag">Coming in Phase 7</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Submissions Section -->
+  <section class="dash-section" id="section-submissions" hidden>
+    <div class="dash-section-header">
+      <h2>Submissions</h2>
+      <div class="submissions-controls">
+        <input type="search" id="searchInput" class="search-input" placeholder="Search name, email, or message...">
+        <select id="filterStatus" class="filter-select">
+          <option value="">All Statuses</option>
+          <option value="new">New</option>
+          <option value="contacted">Contacted</option>
+          <option value="in_progress">In Progress</option>
+          <option value="closed_won">Won</option>
+          <option value="closed_lost">Lost</option>
+        </select>
+        <select id="filterRead" class="filter-select">
+          <option value="">All</option>
+          <option value="0">Unread</option>
+          <option value="1">Read</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="dash-card">
+      <div class="table-wrap">
+        <table class="dash-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Type</th>
+              <th>Message</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="submissionsTableBody">
+            <tr><td colspan="8" class="table-empty">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-pagination">
+        <button class="btn-small" id="prevPage" disabled>Previous</button>
+        <span id="pageInfo">Page 1</span>
+        <button class="btn-small" id="nextPage">Next</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Submission Detail Modal -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal" id="detailModal">
+    <div class="modal-header">
+      <h3>Submission Details</h3>
+      <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <!-- Populated by JS -->
+    </div>
+    <div class="modal-footer" id="modalFooter">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

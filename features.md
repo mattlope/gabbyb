@@ -4,6 +4,16 @@
 
 ---
 
+## Completed (v3.0-beta)
+
+- [x] Backend dashboard at `dash.gabbybmusic.com` (Node.js + Express + SQLite)
+- [x] Secure login (bcrypt + JWT + rate limiting + Helmet)
+- [x] On-site booking inquiry form with validation
+- [x] Form submissions tracking in dashboard
+- [x] Dashboard overview with stats cards
+- [x] Submission detail view with status management
+- [x] Dashboard feature roadmap (`DASHBOARD.md`)
+
 ## Completed (v2.2)
 
 - [x] Desktop hero circular video portal (450px glowing circle, flex layout, max-width 1000px)
@@ -67,7 +77,7 @@
 - [ ] **Fan content / UGC section** — Embedded TikToks or Instagram posts from fans using a hashtag
 - [ ] **Dark mode toggle** — Optional dark theme switcher
 - [ ] **Parallax scrolling effects** — Subtle depth on hero and section backgrounds
-- [ ] **Contact form** — On-site booking form instead of linking externally
+- [x] **Contact form** — On-site booking form on booking page, submits to dashboard API
 - [ ] **Multi-language support** — Toggle between English, Portuguese, Spanish, French (matches Gabby's multilingual brand)
 - [ ] **Service worker / offline support** — Cache key pages for offline viewing
 - [ ] **Analytics integration** — Placeholder for Google Analytics or Plausible
