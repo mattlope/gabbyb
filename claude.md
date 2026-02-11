@@ -11,7 +11,7 @@
 
 Official website for **Gabby B** — Brazilian pop artist based in Miami, FL with 5M+ followers. The site promotes her music (XOXO EP), merch (Shopify), music videos (YouTube), and booking inquiries.
 
-**Current version: v2.1**
+**Current version: v2.2**
 
 ## Tech Stack & Constraints
 
@@ -29,6 +29,7 @@ index.html              Main landing page (all sections combined)
 css/styles.css          All styles — design system, components, responsive
 js/main.js              Nav scroll, hamburger, sparkles, scroll reveal
 images/                 logo.webp, hero-bg.webp, xoxo-ep.jpg, about.webp
+videos/                 hero.mp4 (hero background/portal video)
 pages/                  music.html, about.html, videos.html, merch.html, booking.html
 claude.md               This file — session instructions
 features.md             Feature roadmap with checkboxes
@@ -54,6 +55,11 @@ changes.md              Version changelog
 - Headings: Playfair Display (serif, italic, 900 weight)
 - Body: Outfit (sans-serif)
 - Decorative: Dancing Script (cursive)
+
+## Key Layout Patterns
+
+- **Hero section** uses `.hero-inner` flex wrapper (max-width: 1000px) containing `.hero-content` (left) and `.hero-video` (right, circular portal). On mobile (≤600px), `.hero-inner` becomes `position: static` so the video escapes to a full-background absolute element behind the gradient.
+- **EP section** uses `.ep-inner` CSS grid (2-column on desktop, 1-column on mobile) with `.ep-artwork` and `.ep-info`.
 
 ## Conventions
 
