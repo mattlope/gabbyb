@@ -105,8 +105,8 @@ db.init().then(() => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
 
-  app.listen(PORT, () => {
-    console.log(`Dashboard server running on http://localhost:${PORT}`);
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Dashboard server running on port ${PORT}`);
   });
 }).catch((err) => {
   console.error('Failed to initialize database:', err);
