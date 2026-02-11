@@ -1417,8 +1417,7 @@ body {
   .ep-artwork { order: -1; }
   .ep-artwork img { max-width: 300px; margin: 0 auto; display: block; }
   .ep-info p { margin-left: auto; margin-right: auto; }
-  .ep-tracklist { display: flex; flex-direction: column; align-items: center; }
-  .ep-tracklist li { justify-content: center; }
+  .ep-tracklist { max-width: 280px; margin-left: auto; margin-right: auto; }
   .btn-row { justify-content: center; }
 
   .about-inner {
