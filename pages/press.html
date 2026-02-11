@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Press — Gabby B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon-180.png">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="sparkle-container" id="sparkles"></div>
+
+<!-- Navigation -->
+<nav class="nav scrolled" id="nav">
+  <a href="../index.html"><img src="../images/logo.webp" alt="Gabby B" class="nav-logo"></a>
+  <ul class="nav-links">
+    <li><a href="music.html">Music</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="videos.html">Videos</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="press.html" class="active">Press</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-overlay" id="overlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <img src="../images/logo.webp" alt="Gabby B" class="mobile-menu-logo">
+    <div class="mobile-menu-badge">
+      <span class="pulse"></span>
+      XOXO Out Now
+    </div>
+  </div>
+
+  <div class="mobile-menu-socials">
+    <a href="https://open.spotify.com/artist/6Yb4hxEBpRMWgh7YzHbKbn" target="_blank" aria-label="Spotify">
+      <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/gabbybmusic/" target="_blank" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@gabbybmusic" target="_blank" aria-label="TikTok">
+      <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@GabbyBMusic" target="_blank" aria-label="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+  </div>
+
+  <nav class="mobile-menu-nav">
+    <a href="music.html" onclick="closeMenu()">Music</a>
+    <a href="about.html" onclick="closeMenu()">About</a>
+    <a href="videos.html" onclick="closeMenu()">Videos</a>
+    <a href="merch.html" onclick="closeMenu()">Merch</a>
+    <a href="booking.html" onclick="closeMenu()">Booking</a>
+    <a href="press.html" onclick="closeMenu()">Press</a>
+  </nav>
+
+  <div class="mobile-menu-footer">
+    <a href="https://socials.gabbybmusic.com/" target="_blank" class="mobile-menu-links-btn">
+      All Links
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <h1><span class="accent">Press</span> & Media</h1>
+  <p>Gabby B in the news — features, interviews, and reviews</p>
+</div>
+
+<!-- Featured Highlight -->
+<section class="press-featured">
+  <div class="press-featured-inner reveal">
+    <div class="press-featured-badge">Featured</div>
+    <p class="press-featured-source">Rolling Stone</p>
+    <h2>Named One of Rolling Stone's "10 Singers to Watch" in 2025</h2>
+    <p class="press-featured-excerpt">Gabby B was recognized among the top emerging voices in music. During her appearance on Inside South Florida, she shared how her upbringing across Brazil, France, Canada, and the U.S. shaped her identity as a cultural pop artist, and discussed her multilingual project spanning Portuguese, English, French, and Spanish.</p>
+    <a href="https://www.wsfltv.com/news/local-news/soflos-gabby-b-is-going-global-rolling-stone-recognition-multilingual-music-more" target="_blank" class="press-read-link">
+      Read on WSFL-TV
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Press Grid -->
+<section class="press-section">
+  <div class="press-section-inner">
+
+    <!-- TV & Radio -->
+    <div class="reveal">
+      <p class="section-label">Broadcast</p>
+      <h2 class="section-title">TV & <span class="accent">Radio</span></h2>
+    </div>
+
+    <div class="press-grid">
+      <a href="https://wsvn.com/entertainment/deco-drive/soflo-artist-gabby-b-is-turning-the-tables-on-hefner-in-new-single-playboy-bunny/" target="_blank" class="press-card reveal">
+        <div class="press-card-source">WSVN Deco Drive</div>
+        <h3>SoFlo Artist Gabby B Is Turning the Tables on Hefner in New Single "Playboy Bunny"</h3>
+        <p>Gabby B and her crew flip the classic mansion fantasy, delivering a bold anthem about knowing your worth and living life by your own rules.</p>
+        <span class="press-card-date">October 2025</span>
+      </a>
+      <a href="https://wsvn.com/entertainment/deco-drive/gabby-b-gives-her-breast-impression-in-new-single-leche-a-collab-with-fellow-soflo-artist-vikina/" target="_blank" class="press-card reveal" style="transition-delay: 0.1s;">
+        <div class="press-card-source">WSVN Deco Drive</div>
+        <h3>Gabby B's New Single "Leche" — A Collab with Fellow SoFlo Artist Vikina</h3>
+        <p>Featured on NBC Miami's South Florida Live and WSVN FOX's Deco Drive, with airplay support from Pitbull's Globalization on SiriusXM via DJ Laz.</p>
+        <span class="press-card-date">2023</span>
+      </a>
+      <a href="https://www.wsfltv.com/news/local-news/soflos-gabby-b-is-going-global-rolling-stone-recognition-multilingual-music-more" target="_blank" class="press-card reveal" style="transition-delay: 0.2s;">
+        <div class="press-card-source">WSFL-TV / Inside South Florida</div>
+        <h3>SoFlo's Gabby B Is Going Global: Rolling Stone Recognition, Multilingual Music & More</h3>
+        <p>Gabby B appeared on Inside South Florida to discuss her rapid rise, her Rolling Stone recognition, and how growing up across four countries shaped her identity.</p>
+        <span class="press-card-date">January 2025</span>
+      </a>
+    </div>
+
+    <!-- Interviews & Profiles -->
+    <div class="reveal" style="margin-top: 64px;">
+      <p class="section-label">In Conversation</p>
+      <h2 class="section-title">Interviews & <span class="accent">Profiles</span></h2>
+    </div>
+
+    <div class="press-grid">
+      <a href="https://www.miamilivingmagazine.com/post/gabby-b-the-rise-of-a-multilingual-pop-sensation" target="_blank" class="press-card reveal">
+        <div class="press-card-source">Miami Living Magazine</div>
+        <h3>Gabby B: The Rise of a Multilingual Pop Sensation</h3>
+        <p>"My experience is my art — I grab my culture, my stories, and what I believe in and make a song out of that."</p>
+        <span class="press-card-date">December 2023</span>
+      </a>
+      <a href="https://voyagemia.com/interview/check-out-gabby-bs-story/" target="_blank" class="press-card reveal" style="transition-delay: 0.1s;">
+        <div class="press-card-source">Voyage MIA Magazine</div>
+        <h3>Check Out Gabby B's Story</h3>
+        <p>Born in Brazil, raised in France, now based in South Florida — Gabby shares her journey across three continents and three languages in this in-depth profile.</p>
+        <span class="press-card-date">June 2024</span>
+      </a>
+      <a href="https://canvasrebel.com/meet-gabby-b/" target="_blank" class="press-card reveal" style="transition-delay: 0.2s;">
+        <div class="press-card-source">CanvasRebel Magazine</div>
+        <h3>Meet Gabby B.</h3>
+        <p>A conversation about pursuing a creative career, the moments that shaped her artistic journey, and what drives her passion for music and performance.</p>
+        <span class="press-card-date">2024</span>
+      </a>
+      <a href="https://lmgfl.com/gabby-b-shakes-it-up/" target="_blank" class="press-card reveal">
+        <div class="press-card-source">Lifestyle Media Group</div>
+        <h3>Gabby B Shakes It Up</h3>
+        <p>Gabby opens up about the incidents that shaped her childhood — and that ultimately led to the inspired example she's setting for fans of all ages.</p>
+        <span class="press-card-date">September 2023</span>
+      </a>
+      <a href="https://voyagemia.com/interview/meet-gabriela-bueno-gabby-b-ft-lauderdale/" target="_blank" class="press-card reveal" style="transition-delay: 0.1s;">
+        <div class="press-card-source">Voyage MIA Magazine</div>
+        <h3>Meet Gabby B — Ft. Lauderdale</h3>
+        <p>An early interview where Gabby shares how she got started in music, her Brazilian roots, and the journey from South Florida stages to international charts.</p>
+        <span class="press-card-date">August 2020</span>
+      </a>
+      <a href="https://podcasts.apple.com/us/podcast/interview-gabby-b-how-exposed-to-different-cultures/id1441824655?i=1000585820616" target="_blank" class="press-card reveal" style="transition-delay: 0.2s;">
+        <div class="press-card-source">Folksalert Podcast</div>
+        <h3>How Exposed to Different Cultures Influenced Her Music</h3>
+        <p>Born in Goiania, Brazil, to a Samba dancer mother and capoeira master father, Gabby discusses how growing up across cultures fuels her multilingual artistry.</p>
+        <span class="press-card-date">November 2022</span>
+      </a>
+    </div>
+
+    <!-- Reviews -->
+    <div class="reveal" style="margin-top: 64px;">
+      <p class="section-label">Reviews</p>
+      <h2 class="section-title">What They're <span class="accent">Saying</span></h2>
+    </div>
+
+    <div class="press-quotes-grid">
+      <div class="press-quote reveal">
+        <blockquote>"A fiery blend of reggaeton, Brazilian funk, and Latin pop that cements her as a rising force in the global music scene."</blockquote>
+        <cite>— Music Crowns, on <em>XOXO</em> EP</cite>
+        <a href="https://www.musiccrowns.org/new-music/gabby-b-ignites-latin-pop-with-electrifying-new-ep-xoxo/" target="_blank" class="press-quote-link">Read Review</a>
+      </div>
+      <div class="press-quote reveal" style="transition-delay: 0.1s;">
+        <blockquote>"A dynamic Latin pop EP that offers a wide range of themes overtop one of a kind production. Gabby B cements herself as an artist to watch."</blockquote>
+        <cite>— Rising Artists Blog, on <em>XOXO</em> EP</cite>
+        <a href="https://risingartistsblog.com/2025/03/24/xoxo-by-gabby-b/" target="_blank" class="press-quote-link">Read Review</a>
+      </div>
+      <div class="press-quote reveal" style="transition-delay: 0.2s;">
+        <blockquote>"XOXO consists of seven different tracks, all of which are amazing. 'AMG' is the perfect start — the catchy beat will have you hooked."</blockquote>
+        <cite>— The Music Asylum, on <em>XOXO</em> EP</cite>
+        <a href="https://themusicasylum.co.uk/2025/04/12/gabby-b-xoxo-ep-review/" target="_blank" class="press-quote-link">Read Review</a>
+      </div>
+    </div>
+
+    <div class="press-grid" style="margin-top: 32px;">
+      <a href="https://v13.net/2025/10/gabby-b-playboy-bunny-song-review/" target="_blank" class="press-card reveal">
+        <div class="press-card-source">V13</div>
+        <h3>"Playboy Bunny" — Song Review</h3>
+        <p>V13 reviews Gabby B's latest single merging pop and Brazilian funk, highlighting the track's empowering message and bold production.</p>
+        <span class="press-card-date">October 2025</span>
+      </a>
+      <a href="https://indiepulsemusic.com/2025/11/07/gabby-bs-playboy-bunny/" target="_blank" class="press-card reveal" style="transition-delay: 0.1s;">
+        <div class="press-card-source">Indie Pulse Music</div>
+        <h3>Gabby B's "Playboy Bunny"</h3>
+        <p>A deep dive into the self-worth anthem produced by Emmy Award-winning Joseph Lopez, blending funk percussion and pop melodies.</p>
+        <span class="press-card-date">November 2025</span>
+      </a>
+      <a href="https://earmilk.com/2024/02/22/gabby-b-releases-two-new-eclectic-tracks-honoring-her-brazilian-roots/" target="_blank" class="press-card reveal" style="transition-delay: 0.2s;">
+        <div class="press-card-source">EARMILK</div>
+        <h3>Gabby B Releases Two New Eclectic Tracks Honoring Her Brazilian Roots</h3>
+        <p>Covering Gabby B's Brazilian-inspired singles "Lickorish" and "Si No Sabias," blending her Portuguese heritage with modern pop production.</p>
+        <span class="press-card-date">February 2024</span>
+      </a>
+      <a href="https://www.indiemusicdiscovery.com/gabby-b-strikes-a-chord-with-new-single-nothing-to-me/" target="_blank" class="press-card reveal">
+        <div class="press-card-source">Indie Music Discovery</div>
+        <h3>Gabby B Strikes a Chord with New Single "Nothing To Me"</h3>
+        <p>Exploring the emotional depth and vocal range showcased in Gabby B's single about moving on and self-empowerment.</p>
+        <span class="press-card-date">April 2024</span>
+      </a>
+      <a href="https://goodstarvibes.com/gabby-b-new-ep-xoxo-latin-pop-brazilian-funk/" target="_blank" class="press-card reveal" style="transition-delay: 0.1s;">
+        <div class="press-card-source">Good Star Vibes</div>
+        <h3>Gabby B Unleashes Electrifying New EP "XOXO"</h3>
+        <p>A look at how Gabby B seamlessly blends Reggaeton, Brazilian Funk, and Latin pop in her debut Spanish-language project.</p>
+        <span class="press-card-date">February 2025</span>
+      </a>
+    </div>
+
+    <!-- Press Releases -->
+    <div class="reveal" style="margin-top: 64px;">
+      <p class="section-label">Releases</p>
+      <h2 class="section-title">Press <span class="accent">Releases</span></h2>
+    </div>
+
+    <div class="press-grid">
+      <a href="https://newmusicweekly.com/gabby-b-releases-electrifying-new-ep-xoxo-out-now/" target="_blank" class="press-card reveal">
+        <div class="press-card-source">New Music Weekly</div>
+        <h3>Gabby B Releases Electrifying New EP "XOXO" — Out Now</h3>
+        <p>Official release announcement for Gabby B's first Spanish-language EP, featuring collaborations with Brray and Genio La Musa. Released on Valentine's Day 2025.</p>
+        <span class="press-card-date">February 2025</span>
+      </a>
+      <a href="https://www.bongminesentertainment.com/gabby-b-xoxo-her-first-spanish-language-ep/" target="_blank" class="press-card reveal" style="transition-delay: 0.1s;">
+        <div class="press-card-source">Bong Mines Entertainment</div>
+        <h3>Gabby B Launches "XOXO": Her First Spanish-Language EP</h3>
+        <p>"My goal with 'XOXO' was to create something unique inspired by my appreciation of Latin music that is also authentic to my roots."</p>
+        <span class="press-card-date">February 2025</span>
+      </a>
+      <a href="https://www.cbs42.com/business/press-releases/ein-presswire/835626886/gabby-b-releases-new-single-bundinha-lead-track-from-upcoming-ep-funklandia/" target="_blank" class="press-card reveal" style="transition-delay: 0.2s;">
+        <div class="press-card-source">EIN Presswire</div>
+        <h3>Gabby B Releases New Single "Bundinha," Lead Track from Upcoming EP <em>Funkl&acirc;ndia</em></h3>
+        <p>The single blends Brazilian funk and pop with lyrics in Portuguese and English, produced by Emmy Award-winning Joseph Lopez. Each track on the EP reflects a different musical region.</p>
+        <span class="press-card-date">August 2025</span>
+      </a>
+      <a href="https://www.wjhl.com/business/press-releases/ein-presswire/858912782/gabby-b-drops-new-single-playboy-bunny-merging-pop-brazilian-funk/" target="_blank" class="press-card reveal">
+        <div class="press-card-source">EIN Presswire</div>
+        <h3>Gabby B Drops New Single "Playboy Bunny," Merging Pop & Brazilian Funk</h3>
+        <p>The second preview from forthcoming EP <em>Funkl&acirc;ndia</em>, the video flips the classic mansion fantasy into an empowerment anthem.</p>
+        <span class="press-card-date">October 2025</span>
+      </a>
+      <a href="https://www.pressparty.com/pg/newsdesk/rickeberle/view/450446" target="_blank" class="press-card reveal" style="transition-delay: 0.1s;">
+        <div class="press-card-source">Pressparty</div>
+        <h3>Gabby B Releases Electrifying New EP "XOXO" Out Now</h3>
+        <p>International press distribution covering the XOXO release, following a landmark year of performances at Y100 Jingle Ball and singing the National Anthem for the Chicago Bulls.</p>
+        <span class="press-card-date">February 2025</span>
+      </a>
+      <a href="https://lmgfl.com/award-finalist/2023-rockstars-honoree-gabby-b/" target="_blank" class="press-card reveal" style="transition-delay: 0.2s;">
+        <div class="press-card-source">Lifestyle Media Group</div>
+        <h3>2023 Rockstars Honoree: Gabby B</h3>
+        <p>Recognized by Lifestyle Media Group as a 2023 Rockstars Honoree for her achievements in music, advocacy, and cultural impact across South Florida and beyond.</p>
+        <span class="press-card-date">2023</span>
+      </a>
+    </div>
+
+    <!-- Press Contact -->
+    <div class="press-contact reveal" style="margin-top: 64px;">
+      <p class="section-label">Media Inquiries</p>
+      <h2 class="section-title">Get in <span class="accent">Touch</span></h2>
+      <p>For press inquiries, interview requests, or media credentials, reach out to the team.</p>
+      <a href="mailto:booking@gabbybmusic.com" class="press-contact-btn">
+        Press Inquiries
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <img src="../images/logo.webp" alt="Gabby B" class="footer-logo">
+  <p>&copy; 2025 Gabby B. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="press.html">Press</a>
+    <a href="booking.html">Booking</a>
+    <a href="https://socials.gabbybmusic.com/" target="_blank">Links</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
