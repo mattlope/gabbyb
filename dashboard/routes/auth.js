@@ -17,7 +17,7 @@ router.post('/login', (req, res) => {
   const user = db.prepare('SELECT * FROM users WHERE username = ?').get(username);
   if (!user) {
     // Use same delay as successful path to prevent timing attacks
-    bcrypt.compareSync('dummy', '$2a$12$0000000000000000000000000000000000000000000000000000');
+    bcrypt.hashSync('dummy', 1);
     return res.status(401).json({ error: 'Invalid credentials' });
   }
 
@@ -27,7 +27,7 @@ router.post('/login', (req, res) => {
   }
 
   // Update last login
-  db.prepare('UPDATE users SET last_login = datetime("now") WHERE id = ?').run(user.id);
+  db.prepare("UPDATE users SET last_login = datetime('now') WHERE id = ?").run(user.id);
 
   const sessionHours = parseInt(process.env.SESSION_HOURS) || 24;
   const token = jwt.sign(
