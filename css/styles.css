@@ -322,9 +322,12 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: 30% 20%;
-  filter: brightness(0.75) saturate(1.2);
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(255,20,147,0.35) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(199,21,133,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(255,105,180,0.1) 0%, transparent 70%),
+    radial-gradient(circle at 70% 80%, rgba(148,0,211,0.2) 0%, transparent 40%),
+    linear-gradient(160deg, #0a0a0a 0%, #1a1a2e 40%, #16213e 70%, #0a0a0a 100%);
   transform: scale(1.05);
   transition: transform 8s ease-out;
 }
@@ -1442,8 +1445,11 @@ body {
     padding-bottom: 32px;
   }
   .hero-bg {
-    background-position: 30% top;
-    filter: brightness(0.7) saturate(1.3);
+    background:
+      radial-gradient(ellipse at 30% 90%, rgba(255,20,147,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 70% 10%, rgba(199,21,133,0.2) 0%, transparent 50%),
+      radial-gradient(circle at 60% 80%, rgba(148,0,211,0.2) 0%, transparent 40%),
+      linear-gradient(160deg, #0a0a0a 0%, #1a1a2e 40%, #16213e 70%, #0a0a0a 100%);
   }
   .hero-gradient {
     background:
