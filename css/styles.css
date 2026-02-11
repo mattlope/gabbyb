@@ -448,6 +448,8 @@ body {
 
 .hero-cta {
   display: none;
+  position: absolute;
+  z-index: 3;
 }
 
 @media (max-width: 600px) {
@@ -455,19 +457,20 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 14px 28px;
+    padding: 12px 24px;
     background: linear-gradient(135deg, var(--pink-hot) 0%, var(--pink-deep) 100%);
     color: white;
     border-radius: 50px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     box-shadow: 0 6px 24px rgba(255,20,147,0.5), 0 0 40px rgba(255,20,147,0.2);
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    margin-top: 24px;
     animation: hero-cta-appear 1s 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    top: 170px;
+    left: 20px;
   }
 }
 
@@ -1488,13 +1491,6 @@ body {
     display: none;
   }
 
-  /* Add CTA button to hero */
-  .hero-content::after {
-    content: '';
-    display: block;
-    margin-top: 24px;
-  }
-
   .stat-row { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .stat { padding: 14px 8px; }
   .stat-num { font-size: 22px; }
@@ -1517,9 +1513,11 @@ body {
     right: 16px;
   }
   .hero-cta {
-    padding: 12px 24px;
-    font-size: 12px;
+    padding: 10px 20px;
+    font-size: 11px;
     gap: 8px;
+    top: 160px;
+    left: 16px;
   }
   .hero-cta svg:first-child {
     width: 16px;
