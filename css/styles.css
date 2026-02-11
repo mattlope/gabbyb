@@ -645,12 +645,12 @@ body {
 
 .ep-artwork {
   position: relative;
-  display: inline-block;
+  max-width: 420px;
 }
 
 .ep-artwork img {
   width: 100%;
-  max-width: 420px;
+  display: block;
   border-radius: 16px;
   box-shadow:
     0 20px 60px rgba(255,20,147,0.3),
